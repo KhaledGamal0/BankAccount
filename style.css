@@ -5,8 +5,8 @@
 }
 
 html {
-  font-size: 58%;
-  box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: inherit;
 }
 
 body {
