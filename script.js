@@ -136,6 +136,7 @@ let currentAccount;
 
 btnLogin.addEventListener('click', function (e) {
   e.preventDefault();
+  document.getElementById('testAccountInfo').style.display = 'none';
 
   currentAccount = accounts.find(
     acc => acc.username === inputLoginUsername.value
