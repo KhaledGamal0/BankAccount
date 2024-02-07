@@ -18,7 +18,7 @@
     <!-- TOP NAVIGATION -->
     <nav>
       <p class="welcome">Log in to get started</p>
-      <img src="logo.png" alt="Logo" class="logo" />
+      <img src="/BankAccount/logo.png" alt="Logo" class="logo" />
       <form class="login">
         <input
           type="text"
@@ -34,6 +34,30 @@
         <button class="login__btn">&rarr;</button>
       </form>
     </nav>
+
+    <div
+      id="testAccountInfo"
+      style="
+        background-color: lightgrey;
+        padding: 20px;
+        font-size: 1.7em;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      "
+    >
+      <p>For testing purposes, you can use the following accounts:</p>
+      <p><strong>User 1:</strong> KG, <strong>PIN:</strong> 1111</p>
+      <p><strong>User 2:</strong> SR, <strong>PIN:</strong> 2222</p>
+      <p><strong>User 3:</strong> JW, <strong>PIN:</strong> 3333</p>
+      <p><strong>User 4:</strong> SS, <strong>PIN:</strong> 4444</p>
+      <p>
+        These accounts can be used to test various features of the website such
+        as transfers, deposits, and more. Enjoy exploring!
+      </p>
+    </div>
 
     <main class="app">
       <!-- BALANCE -->
@@ -112,25 +136,6 @@
         </form>
       </div>
     </main>
-    <div
-      id="testAccountInfo"
-      style="
-        background-color: lightgrey;
-        padding: 20px;
-        margin-top: 20px;
-        font-size: 1.5em;
-      "
-    >
-      <p>For testing purposes, you can use the following accounts:</p>
-      <p><strong>User 1:</strong> KG, <strong>PIN:</strong> 1111</p>
-      <p><strong>User 2:</strong> SR, <strong>PIN:</strong> 2222</p>
-      <p><strong>User 3:</strong> JW, <strong>PIN:</strong> 3333</p>
-      <p><strong>User 4:</strong> SS, <strong>PIN:</strong> 4444</p>
-      <p>
-        These accounts can be used to test various features of the website such
-        as transfers, deposits, and more. Enjoy exploring!
-      </p>
-    </div>
   </body>
   <script defer src="script.js"></script>
 </html>
