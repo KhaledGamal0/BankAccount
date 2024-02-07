@@ -139,10 +139,8 @@ btnLogin.addEventListener('click', function (e) {
   document.getElementById('testAccountInfo').style.display = 'none';
 
   currentAccount = accounts.find(
-    acc => acc.username === inputLoginUsername.value
+    acc => acc.username.toLowerCase() === inputLoginUsername.value.toLowerCase()
   );
-  console.log(currentAccount);
-
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
     // Display UI and message
     labelWelcome.textContent = `Welcome back, ${
