@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 52%;
   box-sizing: border-box;
 }
 
@@ -15,28 +15,41 @@ body {
   background-color: #f3f3f3;
   height: 100vh;
   padding: 2rem;
-  zoom: 90%;
+  zoom: 100%;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
-
 .welcome {
-  font-size: 1.9rem;
+  font-size: 2.8rem;
   font-weight: 500;
 }
 
 .logo {
-  height: 5.25rem;
+  height: 6rem;
 }
 
 .login {
   display: flex;
+  margin-left: 2rem;
 }
+/* .welcome {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.logo {
+  height: 5rem;
+}
+
+.login {
+  display: flex;
+  margin-left: 0rem;
+} */
 
 .login__input {
   border: none;
@@ -50,6 +63,9 @@ nav {
   color: inherit;
   border: 1px solid #fff;
   transition: all 0.3s;
+}
+.login__fields {
+  display: flex;
 }
 
 .login__input:focus {
@@ -274,4 +290,137 @@ h2 {
 .form__btn:focus {
   outline: none;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 35%;
+  }
+
+  body {
+    padding: 1.5rem;
+  }
+
+  nav {
+    padding: 0 1rem;
+    margin-top: 1.7rem;
+  }
+  .welcome {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    height: 6rem;
+  }
+
+  .login {
+    margin-left: 3rem;
+  }
+
+  .login__input {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .login__btn {
+    font-size: 3rem;
+  }
+  .login__fields {
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  /* MAIN */
+  /* .app {
+    position: relative;
+    max-width: 100rem;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto repeat(3, 15rem) auto;
+    gap: 2rem;
+    opacity: 0;
+    transition: all 1s;
+  } */
+
+  /*  .balance {
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  } */
+  .app {
+    margin: 4rem auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: 112rem;
+  }
+
+  .balance {
+    grid-column: 1 / span 1;
+  }
+
+  .balance__label {
+    font-size: 2.8rem;
+  }
+
+  .balance__date {
+    font-size: 1.9rem;
+  }
+
+  .balance__value {
+    font-size: 5rem;
+  }
+
+  /* MOVEMENTS */
+
+  .movements__type {
+    font-size: 1.7rem;
+  }
+
+  .movements__value {
+    font-size: 2.2rem;
+    margin-left: auto;
+  }
+
+  /* SUMMARY */
+
+  .summary__label {
+    font-size: 1.9rem;
+  }
+
+  .summary__value {
+    font-size: 2.8rem;
+  }
+
+  .btn--sort {
+    font-size: 1.8rem;
+  }
+
+  /* OPERATIONS */
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .form__input {
+    font-size: 1.5rem;
+  }
+
+  .form__label {
+    font-size: 1.9rem;
+  }
+
+  .form__btn {
+    font-size: 3rem;
+  }
+
+  .form__btn:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .form {
+    max-width: 65rem;
+  }
 }
