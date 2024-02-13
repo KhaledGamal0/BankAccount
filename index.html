@@ -16,22 +16,25 @@
   </head>
   <body>
     <!-- TOP NAVIGATION -->
+    <!-- TOP NAVIGATION -->
     <nav>
       <p class="welcome">Log in to get started</p>
       <img src="logo.png" alt="Logo" class="logo" />
       <form class="login">
-        <input
-          type="text"
-          placeholder="user"
-          class="login__input login__input--user"
-        />
-        <input
-          type="password"
-          placeholder="PIN"
-          maxlength="4"
-          class="login__input login__input--pin"
-        />
-        <button class="login__btn">&rarr;</button>
+        <div class="login__fields">
+          <input
+            type="text"
+            placeholder="user"
+            class="login__input login__input--user"
+          />
+          <input
+            type="password"
+            placeholder="PIN"
+            maxlength="4"
+            class="login__input login__input--pin"
+          />
+        </div>
+        <button class="login__btn">→</button>
       </form>
     </nav>
 
@@ -41,7 +44,7 @@
         background-color: lightgrey;
         padding: 20px;
         font-size: 1.7em;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
