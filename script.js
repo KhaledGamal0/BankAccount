@@ -139,7 +139,7 @@ btnLogin.addEventListener('click', function (e) {
   document.getElementById('testAccountInfo').style.display = 'none';
 
   currentAccount = accounts.find(
-    acc => acc.username.toLowerCase() === inputLoginUsername.value.toLowerCase()
+    acc => acc.username === inputLoginUsername.value.toLowerCase()
   );
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
     // Display UI and message
@@ -199,7 +199,7 @@ btnClose.addEventListener('click', function (e) {
   e.preventDefault();
 
   if (
-    inputCloseUsername.value === currentAccount.username &&
+    inputCloseUsername.value.toLowerCase() === currentAccount.username &&
     Number(inputClosePin.value) === currentAccount.pin
   ) {
     const index = accounts.findIndex(
